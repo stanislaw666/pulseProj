@@ -1,0 +1,53 @@
+.pluses {
+    background-color: #f6f6f6;
+    min-height: 472px;
+    padding: 69px 0 78px 0;
+    &__title {
+        font-size: 30px;
+        text-align: center;
+        font-weight: 700;
+        color: #0d0d0d;
+    }
+    &__wrapper {
+        display: flex;
+        margin-top: 65px;
+        justify-content: space-between;
+        align-items:center;
+    }
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+        max-width: 259px;
+        flex-direction: column;
+    }
+    &__subtitle {
+        margin-top: 38px;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 700;
+        color: #0d0d0d;
+    } 
+    &__descr {
+        font-size: 14px;
+        font-weight: 300;   
+        color: #0d0d0d;  
+        margin-top: 26px;   
+        text-align: center;
+        a {
+            color: red;
+            text-decoration: underline;
+        }
+    }
+    &__heart {
+        &_animated {
+            animation-name: heartbeat;
+            animation-duration: 2s;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite;
+            &:hover {
+                animation-play-state: paused;
+            }
+        }
+    }
+}
